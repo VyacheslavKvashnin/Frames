@@ -9,11 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var objectView: UIView!
+
+    
+    @IBAction func top(_ sender: UIButton) {
+        UIView.animate(withDuration: 100) {
+            self.objectView.frame.origin.y += 20
+        }
     }
-
-
+    @IBAction func right(_ sender: Any) {
+    }
 }
 
